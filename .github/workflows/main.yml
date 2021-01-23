@@ -28,7 +28,7 @@ jobs:
         run: |
           git config --global user.email ${{secrets.EMAIL}}
           git config --global user.name ${{secrets.USER_NAME}}
-          git remote set-url origin https://${{secrets.ACCESS_TOKEN}}@github.com/${{secrets.USER_NAME}}/deep-muni.git
+          git remote set-url origin https://${{secrets.ACCESS_TOKEN}}@github.com/${{secrets.USER_NAME}}/tic-tac-toe.git
       - name: Deploy to GH Pages
         run: |
           npm run deploy
