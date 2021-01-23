@@ -6,6 +6,7 @@ export const checkTied = (grid) => {
         if (square.disabled) {
             count++;
         }
+        return true;
     })
 
     return count === 9;

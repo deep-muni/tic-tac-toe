@@ -46,6 +46,7 @@ const Game = () => {
                 setWinner(winner + " Wins");
                 tempGrid.map(grid => {
                     grid.disabled = true;
+                    return true;
                 });
                 setStatus(true);
                 setGrid(tempGrid);
